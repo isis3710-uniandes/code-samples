@@ -1,7 +1,7 @@
 const asyncFunction = (callback, i) => {
   setTimeout(() => {
     callback(`Evaluating ${i}`);
-  }, Math.random() * 1000);
+  }, Math.random() * 2000);
 };
 
 for (let i = 0; i < 10; i++) {
