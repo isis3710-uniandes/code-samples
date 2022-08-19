@@ -1,11 +1,10 @@
-const asyncFunction = (callback, i) => {
+function asyncFunction(callback) {
   setTimeout(() => {
-    callback(`Evaluating ${i}`);
-  }, Math.random() * 2000);
-};
-
-for (let i = 0; i < 10; i++) {
-  asyncFunction((data) => {
-    console.log(data);
-  }, i);
+    const result = "end of complex process";
+    callback(result);
+  }, Math.random() * 1000);
 }
+
+asyncFunction((data) => {
+  console.log(`Result: ${data}`);
+});

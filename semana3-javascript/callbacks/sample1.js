@@ -1,13 +1,8 @@
-function asyncFunction(callback, i) {
+function asyncFunction() {
   setTimeout(() => {
-    callback(`Evaluating ${i}`);
+    const result = "end of complex process";
+    console.log(`Result: ${result}`);
   }, Math.random() * 1000);
 }
 
-function printData(data) {
-  console.log(data);
-}
-
-for (let i = 0; i < 10; i++) {
-  asyncFunction(printData, i);
-}
+asyncFunction();
