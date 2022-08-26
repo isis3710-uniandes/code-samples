@@ -22,8 +22,7 @@ function journalEvents(journal) {
 
 function tableFor(event, journal) {
   const table = [0, 0, 0, 0];
-  journal.forEach(j => {
-    const entry = j;
+  journal.forEach(entry => {
     let index = 0;
     if (entry.events.includes(event)) index += 1;
     if (entry.squirrel) index += 2;
