@@ -22,7 +22,7 @@ function journalEvents(journal) {
 
 function tableFor(event, journal) {
   const table = [0, 0, 0, 0];
-  journal.forEach((j, i) => {
+  journal.forEach(j => {
     const entry = j;
     let index = 0;
     if (entry.events.includes(event)) index += 1;
