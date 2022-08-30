@@ -3,7 +3,7 @@ const URL = "https://gist.githubusercontent.com/josejbocanegra/b1873c6b7e7321443
 fetch(URL).then(result => result.json()).then(events => {
   const correlations = [];
   journalEvents(events).forEach(event => {
-    let correlation = phi(tableFor(event, events));   
+    const correlation = phi(tableFor(event, events));   
     correlations.push({event, correlation}); 
   });
   console.log("Final result: ", correlations.sort((a, b) => b.correlation - a.correlation ));
