@@ -1,3 +1,3 @@
 # code-samples
 
-Repositorio con código de ejemplo
+Repositorio con códigos de ejemplo.
